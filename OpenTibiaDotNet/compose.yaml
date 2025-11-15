@@ -1,0 +1,12 @@
+﻿services:
+  opentibiadotnet.client:
+    image: opentibiadotnet.client
+    build:
+      context: .
+      dockerfile: OpenTibiaDotNet/OpenTibiaDotNet.Client/Dockerfile
+
+  opentibiadotnet:
+    image: opentibiadotnet
+    build:
+      context: .
+      dockerfile: OpenTibiaDotNet/OpenTibiaDotNet/Dockerfile
